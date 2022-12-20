@@ -13,7 +13,7 @@ daha sonra lets-encrypt sertifikası için cert bot yükleyeceğiz. ve certifika
 ```
 apt install certbot -y
 
-certbot certonly --standalone -d "registry.dev-ops.expert" --preferred-challenges http --agree-tos -n -m "yourmail" --keep-until-expiring
+certbot certonly --standalone -d "yourdomain" --preferred-challenges http --agree-tos -n -m "yourmail" --keep-until-expiring
 ```
 
 cert üretiltikten sonra cert dizininden kendi dizinimize atacağız.
