@@ -43,7 +43,7 @@ harbor kurulduktan sonra birtane private repo açılıp içine image atabilriiz.
 kubernetes için öncelikle bir private registry secret üreteceğiz. username ve password olarak açtığımız admin yetkili user ı verebiliriz.
 
 ```
-kubectl create secret docker-registry registry --docker-server=registry.dev-ops.expert --docker-username=push --docker-password=Push12345! --docker-email=push@dev-ops.expert
+kubectl create secret docker-registry registry --docker-server=<registry> --docker-username=<username> --docker-password=<password> --docker-email=push@dev-ops.expert
 ```
 
 daha sonra bu secret in bütün podlarda kullanılamsı için default service accoutn a inject etmemiz gerekiyor. ister editleyerek ister patchleyerek bunu yapabiliriz.
