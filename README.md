@@ -8,7 +8,9 @@ ubuntu 18.04 e yüklemek için scriptimi kullanabilirsiniz.
 
 ```curl https://raw.githubusercontent.com/alperen-selcuk/docker-install/main/ubuntu-1804.sh | bash -```
 
-daha sonra lets-encrypt sertifikası için cert bot yükleyeceğiz. ve certifika üreteceğiz
+daha sonra lets-encrypt sertifikası için cert bot yükleyeceğiz. ve sertifika üreteceğiz
+
+eğer domaininiz varsa A kaydı domaine eklemeniz gerekiyor. 
 
 ```
 apt install certbot -y
